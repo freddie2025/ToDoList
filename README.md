@@ -1,5 +1,5 @@
-# TODO
-A simple TODO list written in multiple .NET technologies 
+# To Do
+A simple To Do list written in multiple .NET technologies 
 
 ### Console TODO List
 [Requirement Video](https://www.youtube.com/watch?v=pxdwwgIja5Q&list=PLLWMQd6PeGY1VcJGocm1wwtFCZUrh2sc9&index=39)  
