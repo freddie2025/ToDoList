@@ -1,0 +1,13 @@
+﻿@page
+@model ToDoListRazor.CreateToDoModel
+@{
+    ViewData["Title"] = "CreateToDo";
+}
+
+<h1>Create To Do</h1>
+
+<form method="post">
+    <input asp-for="ToDoText" type="text" placeholder="To Do Item" />
+    <input asp-for="IsComplete" type="checkbox" />
+    <button type="submit">Add ToDo Item</button>
+</form>

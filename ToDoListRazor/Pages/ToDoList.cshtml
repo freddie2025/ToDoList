@@ -1,0 +1,26 @@
+﻿@page
+@model ToDoListRazor.ToDoListModel
+@{
+    ViewData["Title"] = "ToDoList";
+}
+
+<h1>To Do List</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>To Do Text</th>
+            <th>Is Complete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var todo in Model.ToDos)
+        {
+        <tr>
+            <td>@todo.Id</td>
+            <td>@todo.ToDoText</td>
+            <td>@todo.IsComplete</td>
+        </tr>
+        }
+    </tbody>
+</table>

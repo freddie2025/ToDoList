@@ -23,7 +23,7 @@ A simple To Do list written in multiple .NET technologies
 
 ### ASP.NET Core Razor Pages To Do List Part 1 Challenge
 [Requirement Video](https://www.youtube.com/watch?v=pxdwwgIja5Q&list=PLLWMQd6PeGY1VcJGocm1wwtFCZUrh2sc9&index=44)  
-[Documentation]()  
+[Documentation](https://www.filepicker.io/api/file/v68AMgsTsKNFxqB4cr84)  
 
 ### ASP.NET Core Razor Pages To Do List Part 2 Challenge
 [Requirement Video](https://www.youtube.com/watch?v=pxdwwgIja5Q&list=PLLWMQd6PeGY1VcJGocm1wwtFCZUrh2sc9&index=45)  
