@@ -1,16 +1,18 @@
 ﻿@page
 @model ToDoListRazor.ToDoListModel
 @{
-    ViewData["Title"] = "ToDoList";
+    ViewData["Title"] = "Todo List";
 }
 
-<h1>To Do List</h1>
+<h1>Todo List</h1>
 <table class="table table-striped">
     <thead>
         <tr>
             <th>Id</th>
             <th>To Do Text</th>
             <th>Is Complete</th>
+            <th>Mark Complete</th>
+            <th>Delete</th>
         </tr>
     </thead>
     <tbody>
@@ -20,6 +22,8 @@
             <td>@todo.Id</td>
             <td>@todo.ToDoText</td>
             <td>@todo.IsComplete</td>
+            <td><a asp-page="./CompleteToDo" asp-route-id="@todo.Id">Mark Complete</a></td>
+            <td><a asp-page="./DeleteToDo" asp-route-id="@todo.Id">Delete</a></td>
         </tr>
         }
     </tbody>

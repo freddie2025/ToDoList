@@ -1,0 +1,17 @@
+﻿@page
+@model ToDoListRazor.DeleteToDoModel
+@{
+    ViewData["Title"] = "Delete Todo";
+}
+
+<h1>Delete Todo</h1>
+
+<p>
+    Are you sure you want to delete this record: @Model.ToDoItem.ToDoText
+</p>
+
+<form method="post">
+    <input asp-for="ToDoItem.Id" type="hidden" />
+
+    <button type="submit">Delete</button>
+</form>

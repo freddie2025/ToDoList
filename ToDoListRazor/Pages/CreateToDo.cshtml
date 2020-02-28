@@ -1,10 +1,15 @@
 ﻿@page
 @model ToDoListRazor.CreateToDoModel
 @{
-    ViewData["Title"] = "CreateToDo";
+    ViewData["Title"] = "Create Todo";
 }
 
-<h1>Create To Do</h1>
+<h1>Create Todo</h1>
+
+@if (string.IsNullOrWhiteSpace(Model.ErrorMessgae) == false)
+{
+    <h2 class="text-danger">@Model.ErrorMessgae</h2>
+}
 
 <form method="post">
     <input asp-for="ToDoText" type="text" placeholder="To Do Item" />

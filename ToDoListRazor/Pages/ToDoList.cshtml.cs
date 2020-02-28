@@ -1,5 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc.RazorPages;
-using System;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Collections.Generic;
 using System.Security.Claims;
 using ToDoListLibrary;
@@ -7,6 +7,7 @@ using ToDoListRazor.Models;
 
 namespace ToDoListRazor
 {
+    [Authorize]
     public class ToDoListModel : PageModel
     {
         private readonly ISqlDataAccess _sql;

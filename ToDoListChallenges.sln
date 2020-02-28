@@ -8,6 +8,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5ECD80E8-7213-4915-84C2-357C1080EC56}"
 	ProjectSection(SolutionItems) = preProject
 		Documentation\Console ToDo List Challenge.pdf = Documentation\Console ToDo List Challenge.pdf
+		Documentation\Razor Pages ToDo App Part 1 Challenge.pdf = Documentation\Razor Pages ToDo App Part 1 Challenge.pdf
+		Documentation\Razor Pages ToDo App Part 2 Challenge.pdf = Documentation\Razor Pages ToDo App Part 2 Challenge.pdf
 		Documentation\WinForms ToDo List Challenge.pdf = Documentation\WinForms ToDo List Challenge.pdf
 	EndProjectSection
 EndProject

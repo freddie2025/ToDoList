@@ -1,0 +1,28 @@
+﻿@page
+@model ToDoListRazor.UserManagementModel
+@{
+    ViewData["Title"] = "User Management";
+}
+
+<h1>User Management</h1>
+
+@foreach (var u in Model.Users)
+{
+    if (u.PermittedToDoCount == 0)
+    {
+        @($"{u.UserEmail}")
+    }
+    else
+    {
+        @($"{u.UserEmail} ({u.PermittedToDoCount})")
+    }
+    <br />
+}
+
+
+
+<form method="post">
+    <select asp-items="@Model.UserDropDownData" asp-for="@Model.IdToModify"></select>
+    <input asp-for="@Model.PermittedToDoCount" type="number" />
+    <button type="submit">Modify User</button>
+</form>

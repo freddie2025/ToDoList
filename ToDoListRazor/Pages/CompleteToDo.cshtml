@@ -1,0 +1,14 @@
+﻿@page
+@model ToDoListRazor.CompleteToDoModel
+@{
+    ViewData["Title"] = "Complete Todo";
+}
+
+<h1>Complete Todo</h1>
+
+<form method="post">
+    <input asp-for="ToDoItem.Id" type="hidden" />
+    <input asp-for="ToDoItem.ToDoText" type="text" readonly />
+    <input asp-for="ToDoItem.IsComplete" type="checkbox" />
+    <button type="submit">Modify</button>
+</form>

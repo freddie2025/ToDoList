@@ -23,10 +23,18 @@ namespace ToDoListRazor
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddTransient<ISqlDataAccess, SqlDataAccess>();
+
+			services.AddAuthorization(options =>
+			{
+				options.AddPolicy("RequireAdministratorRole",
+					policy => policy.RequireRole("Administrator"));
+			});
+
 			services.AddDbContext<ApplicationDbContext>(options =>
 				options.UseSqlServer(
 					Configuration.GetConnectionString("DefaultConnection")));
 			services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+				.AddRoles<IdentityRole>()
 				.AddEntityFrameworkStores<ApplicationDbContext>();
 			services.AddRazorPages();
 		}

@@ -67,6 +67,11 @@
     <Build Include="dbo\Stored Procedures\spToDos_ReadAll.sql" />
     <Build Include="dbo\Stored Procedures\spToDos_UpdateCompletionStatus.sql" />
     <Build Include="dbo\Tables\ToDos.sql" />
+    <Build Include="dbo\Stored Procedures\spToDos_ReadById.sql" />
+    <Build Include="dbo\Tables\Users.sql" />
+    <Build Include="dbo\Stored Procedures\spUsers_ReadAll.sql" />
+    <Build Include="dbo\Stored Procedures\spUsers_Update.sql" />
+    <Build Include="dbo\Stored Procedures\spToDos_CanCreate.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Publish Profiles\ToDoListDB.publish.xml" />
